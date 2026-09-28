@@ -12,6 +12,7 @@
 
 - ưu: sửa css trong jsx. k cần đặt tên class
 - nhược: tên class dài
+- k nên dùng chung vs css module vì ảnh hưởng hiệu năng (1 module tải lại 1 lần)
 
 ## Tools
 
@@ -34,3 +35,8 @@
 (Next: có sẵn react, tailwind, routing, auth, import @/)
 
 ---
+
+## Responsive
+
+- prefix(tiền tố), vd: sm:flex-row từ màn small trở lên sẽ có css là flex-row
+- dùng un-prefix để css cho mobile
