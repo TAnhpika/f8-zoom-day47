@@ -8,11 +8,29 @@
 
 # Tailwind
 
+- npm i tailwindcss @tailwindcss/vite
+
+- ưu: sửa css trong jsx. k cần đặt tên class
+- nhược: tên class dài
+
+## Tools
+
 - Extension Tailwind CSS IntelliSense giúp gợi ý class
 
-- khi dùng cú pháp: jsx, typescript, scss, tailwindcss
-- trình duyệt hiểu: js, js, css, css
-  -> cần trình dịch: npm i & chạy trình dịch: gọi hàm tailwind
+- Plugin: prettier-plugin-tailwindcss giúp sắp xếp tên class khi save
+  npm install -D prettier prettier-plugin-tailwindcss
 
-- npm i tailwindcss @tailwindcss/vite
-# f8-zoom-day47
+## Cách Tailwind CSS hoạt động vs Vite
+
+- Tailwind quét toàn bộ dự án, tìm các utility classes rồi chuyển thành css
+
+### Layer
+
+- layer viết sau có độ ưu tiên cao hơn (kể cả css trc có dùng !important) =
+- nếu custom thì viết trong layer components
+
+---
+
+(Next: có sẵn react, tailwind, routing, auth, import @/)
+
+---

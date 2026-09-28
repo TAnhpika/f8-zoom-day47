@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@layer layer1, layer2;
+
+@layer layer1 {
+  #text-red {
+    color: red;
+  }
+}
+
+@layer layer2 {
+  .text-yellow {
+    color: yellowgreen;
+  }
+}
+
+@layer components {
+    .card {
+        border: 3px solid #F62682;
+    }
+}
