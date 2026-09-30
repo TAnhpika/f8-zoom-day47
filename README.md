@@ -151,3 +151,7 @@
   color: --alpha(var(--color-lime-300) / 50%);
 
 - --spacing() function to generate a spacing value: margin: --spacing(4);
+
+## group
+
+Khi hover vào thẻ cha mà thẻ con thay đổi

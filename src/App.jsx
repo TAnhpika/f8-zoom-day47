@@ -1,7 +1,8 @@
 function App() {
   return (
-    <div className="@container/wrap">
-      <div className="card text-pika-500 flex w-sm gap-4 rounded-lg border-2 border-black/5 p-6 shadow-lg">
+    <div className=" @container/wrap flex h-dvh flex-col items-center justify-center gap-8">
+      {/* card 1 */}
+      <div className="group card text-pika-500 flex items-center w-sm gap-4 rounded-lg border-2 border-black/5 p-6 shadow-lg">
         <img
           className="size-12 rounded-sm object-cover"
           src="https://images.unsplash.com/photo-1790579274653-9f8a1351838d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -9,7 +10,7 @@ function App() {
         />
 
         <div>
-          <h2 className="text-xl font-bold @max-xl/wrap:text-fuchsia-500">
+          <h2 className="group-hover:text-red-600  text-xl font-bold @max-xl/wrap:text-fuchsia-500">
             ChitChat
           </h2>
           <p className="text-sm">You have a new message!</p>
@@ -17,6 +18,7 @@ function App() {
         </div>
       </div>
 
+      {/* card 2 */}
       <div className="@container flex w-1/2 items-center gap-10 border-2 border-pink-500/20 bg-white p-4 shadow-sm shadow-pink-500">
         <img
           className="size-24 rounded-[50%] object-cover"
