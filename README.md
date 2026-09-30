@@ -54,3 +54,37 @@
 - h-dvh: dynamic viewport height
 - custom: rounded-[50%]
 - đặt biến ở @theme (--card-width)
+
+- px-2 = pl-2 pr-2
+- w-1/2: width 50%
+
+## States
+
+- hover:
+- focus:
+- active:
+
+## responsive
+
+- sm: md: lg: xl: 2xl:
+- sm: (width >= 40rem)
+- max-sm: (width < 40rem)
+
+- md:max-xl: flex (48rem =< width < 80rem)
+
+- custom breakpoint:
+  @theme {
+  --breakpoint-*: initial;
+  --breakpoint-tablet: 40rem;
+  --breakpoint-laptop: 64rem;
+  --breakpoint-desktop: 80rem;
+  }
+
+- single custom: max-[600px]:text-pink-400
+
+### @container
+
+- đánh dấu phần tử làm container cha -> các phần tử con responsive dựa trên chiều rộng của container gần nhất
+- @sm:text-red-600: áp dụng khi chiều rộng của container gần nhất đạt ít nhất 24rem
+- @container/wrap: container là wrap
+- @max-xl/wrap:text-fuchsia-500 : responsive dựa trên container wrap
