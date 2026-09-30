@@ -40,3 +40,17 @@
 
 - prefix(tiền tố), vd: sm:flex-row từ màn small trở lên sẽ có css là flex-row
 - dùng un-prefix để css cho mobile
+
+### Quy tắc xây dựng class
+
+- <property>-<value>
+- value:
+
+* số: 0, 0.5, 1,...
+* chữ: xs, sm, md, lg, xl, 2xl,...
+
+## Property
+
+- h-dvh: dynamic viewport height
+- custom: rounded-[50%]
+- đặt biến ở @theme (--card-width)
