@@ -1,7 +1,7 @@
 function App() {
   return (
-    <div className="@container/wrap dark:bg-gray-500 flex h-dvh w-dvw flex-col items-center justify-center gap-10 md:max-lg:bg-gray-200">
-      <div className="flex w-sm gap-4 rounded-lg bg-white border-2 border-black/5 p-6 text-rose-500 shadow-lg">
+    <div className="@container/wrap">
+      <div className="card text-pika-500 flex w-sm gap-4 rounded-lg border-2 border-black/5 p-6 shadow-lg">
         <img
           className="size-12 rounded-sm object-cover"
           src="https://images.unsplash.com/photo-1790579274653-9f8a1351838d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -9,12 +9,15 @@ function App() {
         />
 
         <div>
-          <h2 className="text-xl font-bold @max-xl/wrap:text-fuchsia-500">ChitChat</h2>
-          <p className="text-sm text-gray-500">You have a new message!</p>
+          <h2 className="text-xl font-bold @max-xl/wrap:text-fuchsia-500">
+            ChitChat
+          </h2>
+          <p className="text-sm">You have a new message!</p>
+          <button className="my-btn">Give love</button>
         </div>
       </div>
 
-      <div className="@container flex w-1/2 items-center bg-white gap-10 border-2 border-pink-500/20 p-4 shadow-sm shadow-pink-500">
+      <div className="@container flex w-1/2 items-center gap-10 border-2 border-pink-500/20 bg-white p-4 shadow-sm shadow-pink-500">
         <img
           className="size-24 rounded-[50%] object-cover"
           src="https://i.pinimg.com/736x/2c/96/fd/2c96fdfa354b3c2c39d7598c21ba5446.jpg"
@@ -29,9 +32,7 @@ function App() {
               My anime girl
             </p>
           </div>
-          <button className="rounded-2xl border-2 border-purple-300/50 p-1 px-2 font-bold text-pink-400 hover:border-transparent hover:bg-pink-400 hover:text-white focus:outline-2 focus:outline-rose-600 active:bg-pink-600">
-            Give love
-          </button>
+          <button className="my-btn">Give love</button>
         </div>
       </div>
     </div>

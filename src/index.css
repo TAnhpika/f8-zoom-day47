@@ -1,3 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+  --color-pika-500: oklch(0.72 0.11 178);
+}
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer components {
+  .card {
+    background-color: #fff;
+    color: var(--color-pika-500);
+  }
+}
+@layer components {
+  .my-btn {
+    @apply rounded-2xl border-2 border-purple-300/50 p-1 px-2 font-bold text-pink-400 hover:border-transparent hover:bg-pink-400 hover:text-white focus:outline-2 focus:outline-rose-600 active:bg-pink-600;
+  }
+}
